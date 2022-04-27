@@ -9,34 +9,3 @@ server:
 logging:
   level:
     ROOT: info
-    org:
-      hibernate:
-        #SQL: DEBUG
-        type:
-          descriptor:
-            sql: TRACE
-      springframework: INFO
-    guide:
-      triple:
-        employment: DEBUG
-spring:
-  aop:
-    proxy-target-class: true
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/triple
-    username: triple-dev
-    password: df8e59338b1f7f531c139e3a7f95360b
-  jackson:
-    serialization:
-      INDENT_OUTPUT: true
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create #validate | create | update
-    properties:
-      hibernate:
-        jdbc.time_zone: UTC
-        format_sql: true
-  messages:
-    encoding: UTF-8
